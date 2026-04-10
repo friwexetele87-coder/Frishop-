@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Luxe Vendu Ultimate</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+<h1>LUXE VENDU</h1>
+<p>🔥 Offre limitée - Commande maintenant</p>
+</header>
+
+<div id="liveSale"></div>
+
+<div id="products" class="grid"></div>
+
+<!-- MODAL -->
+<div id="modal" class="modal">
+<div class="box">
+
+<h2 id="pTitle"></h2>
+<p id="pDesc"></p>
+<p class="price" id="pPrice"></p>
+
+<p>⚠️ Stock: <span id="stock"></span></p>
+<p>👀 <span id="viewers"></span> personnes regardent</p>
+
+<button onclick="choosePayment()">💳 Commander</button>
+
+<div id="paySection" style="display:none;">
+<p id="payNumber"></p>
+<input type="file" id="proof">
+<button onclick="confirmPayment()">✅ J’ai payé</button>
+</div>
+
+<h3>⭐ Avis clients</h3>
+<div id="reviews"></div>
+
+<button onclick="closeModal()">Fermer</button>
+
+</div>
+</div>
+
+<!-- ADMIN -->
+<div id="admin" class="modal">
+<div class="box">
+<h2>📊 Dashboard</h2>
+<p id="stats"></p>
+<button onclick="closeAdmin()">Fermer</button>
+</div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
